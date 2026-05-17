@@ -60,67 +60,125 @@ const Projects = () => {
         <div className="mb-24">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Professional <span className="text-gradient">Showcase</span>
+              Professional <span className="text-gradient">Industrial Ecosystem</span>
             </h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto rounded-full mb-6"></div>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              High-performance B2B SaaS platforms architected for mission-critical industrial automation and enterprise workforce management.
+            </p>
           </div>
 
-          <div className="glass-effect rounded-3xl p-8 md:p-12 border border-blue-500/20 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] -mr-32 -mt-32 rounded-full"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 blur-[100px] -ml-32 -mb-32 rounded-full"></div>
-
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <span className="px-4 py-1.5 bg-blue-500/20 text-blue-400 rounded-full text-sm font-bold tracking-wider uppercase border border-blue-500/30 mb-6 inline-block">
-                  Industrial B2B SaaS
-                </span>
-                <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-                  {professionalEcosystem.title}
-                </h3>
-                <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                  {professionalEcosystem.description}
-                </p>
-                <div className="flex flex-wrap gap-4 mb-8">
-                  {professionalEcosystem.products.map((prod, idx) => (
-                    <div key={idx} className="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-3 rounded-xl">
-                      <span className="text-2xl">{prod.icon}</span>
-                      <div>
-                        <p className="text-xs text-gray-400 font-bold uppercase tracking-tighter">{prod.name}</p>
-                        <p className="text-sm text-white font-medium">{prod.full}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <a
-                  href="#experience"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 shadow-lg shadow-blue-500/20"
-                >
-                  View Enterprise Case Studies
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* HMS - Smart House Management */}
+            <div className="glass-effect rounded-3xl p-8 border border-purple-500/20 hover:border-purple-500/50 transition-all group relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <span className="text-6xl">🏠</span>
               </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="h-48 bg-gradient-to-br from-blue-600 to-blue-900 rounded-2xl border border-white/10 shadow-inner flex items-center justify-center p-6 text-center transform translate-y-6">
-                    <p className="text-sm font-medium text-blue-100">Real-time IoT State Management</p>
-                  </div>
-                  <div className="h-48 bg-zinc-800/80 rounded-2xl border border-white/5 shadow-inner flex items-center justify-center p-6 text-center">
-                    <p className="text-sm font-medium text-gray-400">Multi-tenant Policy Layers</p>
-                  </div>
+              <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">IoT & Automation</span>
+              <h3 className="text-2xl font-bold mb-3 text-white">HMS – Smart House Management</h3>
+              <p className="text-gray-400 text-sm mb-6">Advanced IoT ecosystem for luxury residential automation, managing complex device states with real-time sync.</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-purple-400 font-bold">✓</span>
+                  <span>50% Latency Reduction via MQTT Optimization</span>
                 </div>
-                <div className="space-y-4">
-                  <div className="h-48 bg-zinc-800/80 rounded-2xl border border-white/5 shadow-inner flex items-center justify-center p-6 text-center">
-                    <p className="text-sm font-medium text-gray-400">Audit-Ready Reporting</p>
-                  </div>
-                  <div className="h-48 bg-gradient-to-tr from-purple-600 to-pink-900 rounded-2xl border border-white/10 shadow-inner flex items-center justify-center p-6 text-center transform -translate-y-6">
-                    <p className="text-sm font-medium text-purple-100">Integrated SCADA Dashboards</p>
-                  </div>
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-purple-400 font-bold">✓</span>
+                  <span>10+ IoT Categories Integrated</span>
                 </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {["Zustand", "MQTT", "Supabase", "IoT SDKs"].map(t => (
+                  <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
+                ))}
               </div>
             </div>
+
+            {/* HRMS/AMS - Enterprise Payroll */}
+            <div className="glass-effect rounded-3xl p-8 border border-blue-500/20 hover:border-blue-500/50 transition-all group relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <span className="text-6xl">📊</span>
+              </div>
+              <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Enterprise SaaS</span>
+              <h3 className="text-2xl font-bold mb-3 text-white">Enterprise HRMS & Payroll</h3>
+              <p className="text-gray-400 text-sm mb-6">3-Layer Logic Engine for complex industrial payroll, featuring policy inheritance and biometric integration.</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-blue-400 font-bold">✓</span>
+                  <span>100% Payroll Calculation Accuracy</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-blue-400 font-bold">✓</span>
+                  <span>Zero-Error Attendance Logic for 1000+ users</span>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {["React", "TypeScript", "3-Layer Logic", "MathJS"].map(t => (
+                  <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* BMS - SCADA & Industrial UI */}
+            <div className="glass-effect rounded-3xl p-8 border border-red-500/20 hover:border-red-500/50 transition-all group relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <span className="text-6xl">🏢</span>
+              </div>
+              <span className="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">SCADA / HMI</span>
+              <h3 className="text-2xl font-bold mb-3 text-white">BMS – Industrial SCADA Hub</h3>
+              <p className="text-gray-400 text-sm mb-6">Centralized SCADA UI/HMI for real-time building utility monitoring and critical alarm management.</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-red-400 font-bold">✓</span>
+                  <span>Real-time SCADA Visualization for HVAC/Power</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-red-400 font-bold">✓</span>
+                  <span>Zero-Latency Critical Alarm Notifications</span>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {["SCADA UI", "Modbus", "Spring Boot", "Recharts"].map(t => (
+                  <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* SEO & Performance Framework */}
+            <div className="glass-effect rounded-3xl p-8 border border-emerald-500/20 hover:border-emerald-500/50 transition-all group relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <span className="text-6xl">⚡</span>
+              </div>
+              <span className="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Web Performance</span>
+              <h3 className="text-2xl font-bold mb-3 text-white">SEO & Performance Architecture</h3>
+              <p className="text-gray-400 text-sm mb-6">Custom framework for React SEO, ensuring sub-second page loads and perfect search engine indexing.</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-emerald-400 font-bold">✓</span>
+                  <span>40% Reduction in Time to First Byte (TTFB)</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-emerald-400 font-bold">✓</span>
+                  <span>100% Indexation of Dynamic Route Content</span>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {["Pre-rendering", "Meta Manager", "Vite", "Netlify"].map(t => (
+                  <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <a
+              href="#experience"
+              className="inline-flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105"
+            >
+              Explore Full Case Studies in Experience
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
         </div>
 

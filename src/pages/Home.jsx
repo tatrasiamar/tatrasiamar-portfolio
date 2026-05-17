@@ -45,15 +45,27 @@ const Home = () => {
 
           <div className="space-y-4 text-base md:text-lg text-gray-300 mb-8">
             <p>
-              Software Engineer at{" "}
-              <span className="text-blue-400 font-medium">
-                Terracos Technologies
-              </span>{" "}
-              specializing in high-compliance SaaS architecture and industrial automation systems.
+              <span className="text-blue-400 font-semibold">Lead Developer</span> at Terracos Technologies, architecting the full-lifecycle B2B SaaS ecosystem (AMS, BMS, CMS, HMS) with localized data architecture and industrial compliance.
             </p>
             <p>
-              Architect of complex digital ecosystems, including an Enterprise Payroll Engine with multi-tenant policy inheritance and mission-critical SCADA monitoring solutions.
+              Specializing in <span className="text-purple-400 font-medium">mission-critical systems</span>—from high-precision SCADA monitoring and IoT integration to complex 3-layer payroll logic engines for enterprise clients.
             </p>
+          </div>
+
+          {/* Recent Highlights / Quick Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+            <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-blue-500/50 transition-colors group">
+              <p className="text-2xl font-bold text-blue-400 group-hover:scale-110 transition-transform">40%</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">TTFB Reduction</p>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-purple-500/50 transition-colors group">
+              <p className="text-2xl font-bold text-purple-400 group-hover:scale-110 transition-transform">100%</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">Payroll Accuracy</p>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-pink-500/50 transition-colors group hidden md:block">
+              <p className="text-2xl font-bold text-pink-400 group-hover:scale-110 transition-transform">10+</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">IoT Categories</p>
+            </div>
           </div>
 
           {/* Action Buttons */}
