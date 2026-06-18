@@ -37,6 +37,7 @@ const About = () => {
               "High-Compliance CMS: Environmental monitoring for clean rooms with audit-ready logs",
               "Performance Framework: 40% TTFB reduction via custom React SEO pre-rendering",
               "Database Precision: Optimized high-scale attendance queries for multi-tenant SaaS",
+              "SaaS Infrastructure: Built multi-tenant Super Admin portals with strict RBAC and dynamic pricing",
               "Industrial Automation: Bridge developer for PLC-to-Web state synchronization"
             ].map((item, index) => (
               <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">

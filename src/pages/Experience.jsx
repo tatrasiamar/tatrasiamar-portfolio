@@ -65,7 +65,7 @@ const Experience = () => {
                     ],
                     modules: [
                         { title: "Formula Manager", details: "Dynamic divisors (Fixed 26/30), LOP Base, and Attendance Cycles" },
-                        { title: "Attendance Engine", details: "Fixed 400-level query errors and optimized OR/IN filters for large-scale data" },
+                        { title: "Attendance Engine", details: "Fixed 400-level query errors, implemented Base-10 decimal hour logic, and optimized OR/IN filters" },
                         { title: "3-Layer Logic Engine", details: "Automated OT priorities (Holiday > Sunday > Grade > Global)" }
                     ],
                     architecture: [
@@ -170,8 +170,8 @@ const Experience = () => {
                         "Duplicate content issues without proper canonical links"
                     ],
                     modules: [
-                        { title: "Meta Tag Manager", details: "Dynamic titles and descriptions for every page" },
-                        { title: "Pre-rendering", details: "Generates static HTML for faster loading" },
+                        { title: "Meta Tag Manager", details: "Dynamic titles, centralized metadata, and structured FAQ JSON-LD schema integration" },
+                        { title: "Pre-rendering", details: "Generates static HTML for faster loading and resolved case-sensitive routing issues" },
                         { title: "Canonical Tags", details: "Ensures search engines index the right URLs" }
                     ],
                     architecture: [
@@ -189,6 +189,40 @@ const Experience = () => {
                     impact: [
                         { title: "Search Visibility", desc: "Achieved 100% indexation of all dynamic routes on Google Search Console." },
                         { title: "Performance", desc: "Reduced Time to First Byte (TTFB) by 40% via static delivery." }
+                    ]
+                },
+                {
+                    name: "SaaS Infrastructure & Super Admin Portal",
+                    description: "Architected a centralized multi-tenant administration portal with strict role-based access controls and dynamic subscription plan enforcement.",
+                    isRichContent: true,
+                    role: "Lead Architect",
+                    overview: "Developed a comprehensive Super Admin dashboard for tenant lifecycle management, implementing robust subscription limits (e.g., Starter package constraints) and real-time database synchronizations across AMS, BMS, and CMS.",
+                    problem: [
+                        "Lack of unified tenant lifecycle management",
+                        "Inconsistent role-based access across multi-domain features",
+                        "Client-side caching causing attendance data desynchronization"
+                    ],
+                    modules: [
+                        { title: "Access Control", details: "Strict PrivateRoute guards, AuthContext integration, and dynamic role-based sidebar navigation" },
+                        { title: "Subscription Manager", details: "Dynamic pricing plans and feature toggling via stringified JSON arrays" },
+                        { title: "Product CMS & Super Admin", details: "Centralized tenant lifecycle management, 'Add Company' dialogs, and robust UI component rendering" }
+                    ],
+                    architecture: [
+                        "React Router Guards",
+                        "Supabase Realtime",
+                        "JSONB Feature Flags",
+                        "Responsive Cards",
+                        "Multi-tenant DB"
+                    ],
+                    tech: ["React", "Supabase", "Tailwind CSS", "RBAC", "Context API"],
+                    challenges: [
+                        { title: "Real-time Sync", desc: "Resolved attendance data desync using Supabase Realtime subscriptions and forced query invalidations." },
+                        { title: "Access Security", desc: "Standardized multi-domain access control, AuthContext feature parsing, and accordion state management." }
+                    ],
+                    impact: [
+                        "Secured multi-feature environments via strict role-based navigation guards",
+                        "Optimized Super Admin UX with mobile-first responsive card layouts",
+                        "Streamlined tenant onboarding with automated feature package classification"
                     ]
                 }
             ],
@@ -240,7 +274,7 @@ const Experience = () => {
                 </h2>
                 <div className="flex justify-center mb-12">
                     <a
-                        href="/Tatras_Amar_Resume.pdf"
+                        href="./Tatras_Amar_Resume.pdf"
                         download
                         className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-zinc-700 rounded-lg text-blue-400 font-bold transition-all hover:scale-105"
                     >

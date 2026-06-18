@@ -22,7 +22,7 @@ const Home = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-xl opacity-40 animate-pulse"></div>
             <img
-              src="/profile.jpeg"
+              src="./profile.jpeg"
               alt="Tatrasi Amar"
               className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-transparent bg-gradient-to-r from-blue-500 to-purple-600 p-1 shadow-2xl transition-transform duration-500 hover:scale-105"
             />
@@ -48,7 +48,7 @@ const Home = () => {
               <span className="text-blue-400 font-semibold">Lead Developer</span> at Terracos Technologies, architecting the full-lifecycle B2B SaaS ecosystem (AMS, BMS, CMS, HMS) with localized data architecture and industrial compliance.
             </p>
             <p>
-              Specializing in <span className="text-purple-400 font-medium">mission-critical systems</span>—from high-precision SCADA monitoring and IoT integration to complex 3-layer payroll logic engines for enterprise clients.
+              Specializing in <span className="text-purple-400 font-medium">mission-critical systems</span>—from high-precision SCADA monitoring and IoT integration to complex 3-layer payroll logic engines and scalable multi-tenant architectures.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
-              href="/Tatras_Amar_Resume.pdf"
+              href="./Tatras_Amar_Resume.pdf"
               download
               className="px-8 py-3 border-2 border-blue-400 rounded-lg font-bold text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-105"
             >

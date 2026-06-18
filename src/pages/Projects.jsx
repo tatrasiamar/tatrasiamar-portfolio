@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: "ATM Simulator Bank Management System",
       description: "A comprehensive desktop banking application featuring secure user authentication, transaction management, balance inquiries, and account operations. Built with Java Swing for an intuitive GUI experience.",
-      image: "/ATM.png",
+      image: "./ATM.png",
       technologies: ["Java", "Swing", "MySQL", "JDBC"],
       github: "https://github.com/tatrasiamar",
       demo: null,
@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: "Weather Application",
       description: "Real-time weather dashboard that provides current weather conditions, forecasts, and meteorological data. Features location-based search and responsive design for seamless cross-device experience.",
-      image: "/weather_Image.jpg",
+      image: "./weather_Image.jpg",
       technologies: ["React.js", "Weather API", "CSS3", "JavaScript"],
       github: "https://github.com/tatrasiamar",
       demo: null,
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description: "Modern, responsive portfolio showcasing projects and skills with smooth animations, glassmorphism effects, and mobile-first design. Built with React and Tailwind CSS for optimal performance.",
-      image: "/portfolio_Image.png",
+      image: "./portfolio_Image.png",
       technologies: ["React", "Tailwind CSS", "Vite", "JavaScript"],
       github: "https://github.com/tatrasiamar",
       demo: null,
@@ -44,7 +44,7 @@ const Projects = () => {
     {
       title: "Library Management System",
       description: "Full-featured library management solution for tracking books, managing member records, handling checkouts/returns, and generating reports. Includes admin dashboard and user-friendly interface.",
-      image: "/Library.jpg",
+      image: "./Library.jpg",
       technologies: ["Java", "Spring Boot", "MySQL", "Bootstrap"],
       github: "https://github.com/tatrasiamar",
       demo: null,
