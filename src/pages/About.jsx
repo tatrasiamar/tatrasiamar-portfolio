@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   const skills = {
-    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap"],
+    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "Electron"],
     backend: ["Java", "Spring Boot", "RESTful APIs", "MQTT", "Python (Basics)"],
-    databases: ["Supabase (PostgreSQL)", "MySQL"],
+    databases: ["Supabase (PostgreSQL)", "MySQL", "SQLite"],
     scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
     tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
     cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"],
