@@ -2,12 +2,12 @@ import React from "react";
 
 const About = () => {
   const skills = {
-    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap"],
+    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "Electron"],
     backend: ["Java", "Spring Boot", "RESTful APIs", "MQTT", "Python (Basics)"],
-    databases: ["Supabase (PostgreSQL)", "MySQL"],
+    databases: ["Supabase (PostgreSQL)", "MySQL", "SQLite"],
     scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
     tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
-    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"],
+    cloudAI: ["GitHub Copilot", "Claude", "ChatGPT", "Cursor", "AI-assisted testing", "Prompt engineering"],
     b2bSaaS: ["Multi-tenant Architecture", "Payroll & Logic Engines", "SaaS Product Design", "Enterprise Integrations", "Industrial Compliance"]
   };
 
@@ -20,7 +20,7 @@ const About = () => {
 
         <div className="mb-12">
           <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            <span className="text-blue-400 font-medium">Software Engineer</span> at Terracos Technologies, specializing in the architecture of high-performance industrial and SaaS ecosystems. My background combines Computer Science expertise with practical implementation of SCADA UI/HMI and PLC automation.
+            <span className="text-blue-400 font-medium">Software Engineer</span> at Terracos Technologies, specializing in the architecture of high-performance industrial and SaaS ecosystems. My background combines Computer Science expertise with practical implementation of <span className="text-cyan-400">SCADA UI/HMI</span> and <span className="text-cyan-400">PLC automation</span>.
           </p>
           <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
             I drive the <span className="text-purple-400 font-medium">full-lifecycle development</span> of technical products, bridging the gap between hardware (IoT/MQTT) and scalable software architectures. My focus is on delivering mission-critical monitoring systems with a commitment to Agile precision and robust engineering.
@@ -28,16 +28,17 @@ const About = () => {
         </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">What I Bring</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Core Competencies & Wins</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
-              "Agile & Scrum Orchestration: Full-lifecycle delivery from UI/DB design to final Sprints",
-              "B2B SaaS Ecosystem: Architecting AMS, BMS, and CMS as integrated enterprise solutions",
-              "Enterprise Payroll Engine: Multi-tenant Policy Inheritance & 3-Layer Logic Engine",
-              "Industrial IoT (IIoT): Real-time monitoring for Clean Room compliance & SCADA systems",
-              "Smart House Management (HMS): Architecting flexible IoT state & device integration",
-              "Database Optimization: Solving high-scale Supabase query & attendance logic challenges",
-              "SEO Optimization: Implementing dynamic meta tags and pre-rendering for better search visibility"
+              "Developed enterprise HRMS and Payroll modules with a 3-layer logic engine",
+              "Integrated PLC and IoT devices with web applications using custom MQTT layers",
+              "Built SCADA dashboards for real-time monitoring of HVAC & Power",
+              "Agile & Scrum: Delivered full-lifecycle features from UI and database design to final production sprints",
+              "Optimized high-scale database queries for multi-tenant SaaS platforms",
+              "Optimized React performance with custom SEO pre-rendering",
+              "Developed clean room monitoring systems with immutable audit-ready logs",
+              "Synchronized industrial hardware state with web applications"
             ].map((item, index) => (
               <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 <div className="flex items-start">
@@ -149,7 +150,7 @@ const About = () => {
                 <svg className="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                 </svg>
-                <h4 className="text-xl font-semibold text-pink-400">Cloud & AI</h4>
+                <h4 className="text-xl font-semibold text-pink-400">AI-Augmented Dev</h4>
               </div>
               <ul className="space-y-2">
                 {skills.cloudAI.map((skill, index) => (
