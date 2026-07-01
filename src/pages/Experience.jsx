@@ -11,11 +11,11 @@ const Experience = () => {
             period: "Oct 2025 – Present",
             type: "Full-time",
             responsibilities: [
-                "Lead full-lifecycle development of the Terracos B2B SaaS Ecosystem—delivering integrated AMS, BMS, CMS, and HMS solutions with localized data architecture",
+                "Developing enterprise web applications for HRMS, Payroll, BMS, SCADA, and IoT platforms using React, TypeScript, Spring Boot, and PostgreSQL",
                 "Architected a project-wide migration to a modular, feature-based architecture for enhanced multi-tenant maintainability",
                 "Implemented custom Static Site Generation (SSG) and prerendering logic to optimize SEO and sub-second page loads for enterprise clients",
                 "Designed SCADA UI/HMI dashboards with real-time Supabase integration, alarms, and trend visualization",
-                "Implemented complex B2B payroll and 3-layer logic engines, ensuring 100% accuracy in total working hour reports and policy inheritance",
+                "Implemented complex B2B payroll and 3-layer logic engines for total working hour reports and policy inheritance",
                 "Integrated IoT devices using MQTT and REST APIs for large-scale industrial environmental monitoring"
             ],
             projects: [
@@ -49,7 +49,7 @@ const Experience = () => {
                         { title: "Precision Logic", desc: "Re-engineered total working hour calculations to account for complex multi-shift cycles." }
                     ],
                     impact: [
-                        { title: "Zero Error Payroll", desc: "Executed month-end salary runs with 100% accuracy via automated rules." },
+                        { title: "Automated Payroll", desc: "Executed month-end salary runs with high precision via automated rules." },
                         { title: "HR Transformation", desc: "Reduced manual payroll auditing effort by 85% for multi-tenant environments." }
                     ]
                 },

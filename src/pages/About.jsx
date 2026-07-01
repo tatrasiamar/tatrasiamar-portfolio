@@ -7,7 +7,7 @@ const About = () => {
     databases: ["Supabase (PostgreSQL)", "MySQL", "SQLite"],
     scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
     tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
-    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"],
+    cloudAI: ["GitHub Copilot", "Claude", "ChatGPT", "Cursor", "AI-assisted testing", "Prompt engineering"],
     b2bSaaS: ["Multi-tenant Architecture", "Payroll & Logic Engines", "SaaS Product Design", "Enterprise Integrations", "Industrial Compliance"]
   };
 
@@ -31,13 +31,14 @@ const About = () => {
           <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Core Competencies & Wins</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
-              "Mission-Critical SCADA: Real-time HMI visualization for HVAC & Power monitoring",
-              "Enterprise HRMS Architect: 100% Payroll accuracy via 3-layer logic engine",
-              "IoT Optimization: Reduced HMS device latency by 50% using custom MQTT layers",
-              "High-Compliance CMS: Environmental monitoring for clean rooms with audit-ready logs",
-              "Performance Framework: 40% TTFB reduction via custom React SEO pre-rendering",
-              "Database Precision: Optimized high-scale attendance queries for multi-tenant SaaS",
-              "Industrial Automation: Bridge developer for PLC-to-Web state synchronization"
+              "Developed enterprise HRMS and Payroll modules with a 3-layer logic engine",
+              "Integrated PLC and IoT devices with web applications using custom MQTT layers",
+              "Built SCADA dashboards for real-time monitoring of HVAC & Power",
+              "Agile & Scrum: Delivered full-lifecycle features from UI and database design to final production sprints",
+              "Optimized high-scale database queries for multi-tenant SaaS platforms",
+              "Optimized React performance with custom SEO pre-rendering",
+              "Developed clean room monitoring systems with immutable audit-ready logs",
+              "Synchronized industrial hardware state with web applications"
             ].map((item, index) => (
               <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 <div className="flex items-start">
@@ -149,7 +150,7 @@ const About = () => {
                 <svg className="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                 </svg>
-                <h4 className="text-xl font-semibold text-pink-400">Cloud & AI</h4>
+                <h4 className="text-xl font-semibold text-pink-400">AI-Augmented Dev</h4>
               </div>
               <ul className="space-y-2">
                 {skills.cloudAI.map((skill, index) => (

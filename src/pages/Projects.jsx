@@ -15,6 +15,15 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Portfolio Website",
+      description: "Modern, responsive portfolio showcasing projects and skills with smooth animations, glassmorphism effects, and mobile-first design. Built with React and Tailwind CSS for optimal performance.",
+      image: "/portfolio_Image.png",
+      technologies: ["React", "Tailwind CSS", "Vite", "JavaScript"],
+      github: "https://github.com/tatrasiamar",
+      demo: null,
+      type: "Personal Project"
+    },
+    {
       title: "ATM Simulator Bank Management System",
       description: "A comprehensive desktop banking application featuring secure user authentication, transaction management, balance inquiries, and account operations. Built with Java Swing for an intuitive GUI experience.",
       image: "/ATM.png",
@@ -28,15 +37,6 @@ const Projects = () => {
       description: "Real-time weather dashboard that provides current weather conditions, forecasts, and meteorological data. Features location-based search and responsive design for seamless cross-device experience.",
       image: "/weather_Image.jpg",
       technologies: ["React.js", "Weather API", "CSS3", "JavaScript"],
-      github: "https://github.com/tatrasiamar",
-      demo: null,
-      type: "Personal Project"
-    },
-    {
-      title: "Portfolio Website",
-      description: "Modern, responsive portfolio showcasing projects and skills with smooth animations, glassmorphism effects, and mobile-first design. Built with React and Tailwind CSS for optimal performance.",
-      image: "/portfolio_Image.png",
-      technologies: ["React", "Tailwind CSS", "Vite", "JavaScript"],
       github: "https://github.com/tatrasiamar",
       demo: null,
       type: "Personal Project"
