@@ -11,47 +11,14 @@ const Experience = () => {
             period: "Oct 2025 – Present",
             type: "Full-time",
             responsibilities: [
-                "Lead full-lifecycle development of the Terracos B2B SaaS Ecosystem—delivering integrated AMS, BMS, CMS, and HMS solutions with localized data architecture",
+                "Developing enterprise web applications for HRMS, Payroll, BMS, SCADA, and IoT platforms using React, TypeScript, Spring Boot, and PostgreSQL",
                 "Architected a project-wide migration to a modular, feature-based architecture for enhanced multi-tenant maintainability",
                 "Implemented custom Static Site Generation (SSG) and prerendering logic to optimize SEO and sub-second page loads for enterprise clients",
                 "Designed SCADA UI/HMI dashboards with real-time Supabase integration, alarms, and trend visualization",
-                "Implemented complex B2B payroll and 3-layer logic engines, ensuring 100% accuracy in total working hour reports and policy inheritance",
+                "Implemented complex B2B payroll and 3-layer logic engines for total working hour reports and policy inheritance",
                 "Integrated IoT devices using MQTT and REST APIs for large-scale industrial environmental monitoring"
             ],
             projects: [
-                {
-                    name: "HMS – Smart House Management (B2C/B2B)",
-                    description: "Advanced IoT automation platform for residential and luxury environments, integrating climate control and energy analytics.",
-                    isRichContent: true,
-                    role: "Architect & Lead Developer",
-                    overview: "Designed a comprehensive smart-home ecosystem that manages device states across multiple categories. Implemented an 'Extension Table' pattern in the database to allow flexible monitoring of diverse IoT sensors without schema bloat.",
-                    problem: [
-                        "Managing diverse device states in a unified schema",
-                        "Real-time synchronization of security and climate data",
-                        "High-latency in device-to-dashboard communication"
-                    ],
-                    modules: [
-                        { title: "Automation Engine", details: "Rule-based triggers for climate and lighting" },
-                        { title: "Security Hub", details: "Locker access control and real-time surveillance integration" },
-                        { title: "Energy Monitor", details: "Live consumption tracking and trend analysis" }
-                    ],
-                    architecture: [
-                        "IoT Gateways",
-                        "MQTT / REST",
-                        "Extension Table Layer",
-                        "Real-time Store (Zustand)",
-                        "Secure API Layer"
-                    ],
-                    tech: ["React", "TypeScript", "Zustand", "Supabase", "PostgreSQL", "IoT SDKs"],
-                    challenges: [
-                        { title: "State Management", desc: "Handled complex device state updates using Zustand for zero-lag UI feedback." },
-                        { title: "Database Flexibility", desc: "Designed a schema capable of supporting hundreds of device types via JSONB and extension tables." }
-                    ],
-                    impact: [
-                        "Reduced device communication latency by 50% via MQTT optimization",
-                        "Enabled seamless integration of 10+ new device categories in under 1 week"
-                    ]
-                },
                 {
                     name: "Enterprise HRMS & Payroll Engine",
                     description: "High-end, multi-tenant workforce platform featuring a Policy Inheritance Architecture and a 3-Layer Payroll Execution Engine.",
@@ -82,8 +49,41 @@ const Experience = () => {
                         { title: "Precision Logic", desc: "Re-engineered total working hour calculations to account for complex multi-shift cycles." }
                     ],
                     impact: [
-                        { title: "Zero Error Payroll", desc: "Executed month-end salary runs with 100% accuracy via automated rules." },
+                        { title: "Automated Payroll", desc: "Executed month-end salary runs with high precision via automated rules." },
                         { title: "HR Transformation", desc: "Reduced manual payroll auditing effort by 85% for multi-tenant environments." }
+                    ]
+                },
+                {
+                    name: "Enterprise Offline Desktop Client & Admin Dashboard",
+                    description: "An offline-first desktop application and centralized command system built for a B2B ecosystem.",
+                    isRichContent: true,
+                    role: "Full Stack Developer",
+                    overview: "Developed a comprehensive offline-capable Electron desktop client and an Admin dashboard to oversee a multi-tenant ecosystem. It features robust local data storage, seamless database synchronization, and granular authentication logs.",
+                    problem: [
+                        "Unreliable industrial internet connectivity causing data loss",
+                        "Lack of centralized multi-tenant management",
+                        "Need for strict authentication and security auditing"
+                    ],
+                    modules: [
+                        { title: "Offline Data Engine", details: "Local SQLite storage with automatic cloud sync" },
+                        { title: "Admin Dashboard", details: "Centralized control for multi-tenant organizations and device pairing" },
+                        { title: "Security & Auth", details: "Granular authentication logs and role-based access control" }
+                    ],
+                    architecture: [
+                        "Electron App",
+                        "SQLite DB",
+                        "Sync Engine",
+                        "Cloud Auth",
+                        "React Client"
+                    ],
+                    tech: ["Electron", "React", "SQLite", "Supabase", "TypeScript", "Tailwind CSS"],
+                    challenges: [
+                        { title: "Offline Synchronization", desc: "Built a reliable two-way sync engine to handle data reconciliation when connectivity is restored." },
+                        { title: "Security Auditing", desc: "Implemented immutable authentication logs to track all user sessions and access across the ecosystem." }
+                    ],
+                    impact: [
+                        "Ensured 100% data availability during internet outages at industrial sites",
+                        "Streamlined ecosystem management for system administrators"
                     ]
                 },
                 {
@@ -156,6 +156,39 @@ const Experience = () => {
                         "Ensured 100% compliance with regulatory standards",
                         "Eliminated paper-based recording errors",
                         "Proactive maintenance through trend analysis"
+                    ]
+                },
+                {
+                    name: "HMS – Smart House Management (B2C/B2B)",
+                    description: "Advanced IoT automation platform for residential and luxury environments, integrating climate control and energy analytics.",
+                    isRichContent: true,
+                    role: "Architect & Lead Developer",
+                    overview: "Designed a comprehensive smart-home ecosystem that manages device states across multiple categories. Implemented an 'Extension Table' pattern in the database to allow flexible monitoring of diverse IoT sensors without schema bloat.",
+                    problem: [
+                        "Managing diverse device states in a unified schema",
+                        "Real-time synchronization of security and climate data",
+                        "High-latency in device-to-dashboard communication"
+                    ],
+                    modules: [
+                        { title: "Automation Engine", details: "Rule-based triggers for climate and lighting" },
+                        { title: "Security Hub", details: "Locker access control and real-time surveillance integration" },
+                        { title: "Energy Monitor", details: "Live consumption tracking and trend analysis" }
+                    ],
+                    architecture: [
+                        "IoT Gateways",
+                        "MQTT / REST",
+                        "Extension Table Layer",
+                        "Real-time Store (Zustand)",
+                        "Secure API Layer"
+                    ],
+                    tech: ["React", "TypeScript", "Zustand", "Supabase", "PostgreSQL", "IoT SDKs"],
+                    challenges: [
+                        { title: "State Management", desc: "Handled complex device state updates using Zustand for zero-lag UI feedback." },
+                        { title: "Database Flexibility", desc: "Designed a schema capable of supporting hundreds of device types via JSONB and extension tables." }
+                    ],
+                    impact: [
+                        "Reduced device communication latency by 50% via MQTT optimization",
+                        "Enabled seamless integration of 10+ new device categories in under 1 week"
                     ]
                 },
                 {

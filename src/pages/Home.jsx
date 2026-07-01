@@ -45,15 +45,27 @@ const Home = () => {
 
           <div className="space-y-4 text-base md:text-lg text-gray-300 mb-8">
             <p>
-              Software Engineer at{" "}
-              <span className="text-blue-400 font-medium">
-                Terracos Technologies
-              </span>{" "}
-              specializing in high-compliance SaaS architecture and industrial automation systems.
+              <span className="text-blue-400 font-semibold">Software Engineer</span> at Terracos Technologies, building enterprise SaaS applications including HRMS, Payroll, Building Management Systems, and Industrial IoT dashboards.
             </p>
             <p>
-              Architect of complex digital ecosystems, including an Enterprise Payroll Engine with multi-tenant policy inheritance and mission-critical SCADA monitoring solutions.
+              Specializing in <span className="text-purple-400 font-medium">mission-critical systems</span>—from high-precision SCADA monitoring and IoT integration to complex 3-layer payroll logic engines for enterprise clients.
             </p>
+          </div>
+
+          {/* Recent Highlights / Quick Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+            <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-blue-500/50 transition-colors group">
+              <p className="text-2xl font-bold text-blue-400 group-hover:scale-110 transition-transform">6+</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">Enterprise Modules</p>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-purple-500/50 transition-colors group">
+              <p className="text-2xl font-bold text-purple-400 group-hover:scale-110 transition-transform">10+</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">IoT Integrations</p>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-pink-500/50 transition-colors group hidden md:block">
+              <p className="text-xl font-bold text-pink-400 group-hover:scale-110 transition-transform mt-1 mb-1">React</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">Spring Boot</p>
+            </div>
           </div>
 
           {/* Action Buttons */}
