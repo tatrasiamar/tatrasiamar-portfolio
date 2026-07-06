@@ -39,9 +39,13 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-zinc-900/95 z-50 backdrop-blur-md shadow-lg border-b border-zinc-800">
       <div className="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <div className="text-white text-xl md:text-2xl font-bold">
+        <a 
+          href="#home"
+          onClick={(e) => handleNavClick(e, 'home')}
+          className="text-white text-xl md:text-2xl font-bold cursor-pointer"
+        >
           <span className="text-gradient">Amar Tatrasi</span>
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 text-white">
