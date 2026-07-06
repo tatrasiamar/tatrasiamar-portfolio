@@ -6,7 +6,7 @@ const About = () => {
     backend: ["Java", "Spring Boot", "RESTful APIs", "MQTT", "Python (Basics)"],
     databases: ["Supabase (PostgreSQL)", "MySQL", "SQLite"],
     scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
-    tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
+    tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel", "Netlify"],
     cloudAI: ["GitHub Copilot", "Claude", "ChatGPT", "Cursor", "AI-assisted testing", "Prompt engineering"],
     b2bSaaS: ["Multi-tenant Architecture", "Payroll & Logic Engines", "SaaS Product Design", "Enterprise Integrations", "Industrial Compliance"]
   };
