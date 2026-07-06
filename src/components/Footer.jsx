@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="flex gap-6 text-sm">
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm">
                         {["home", "about", "experience", "projects", "contact"].map((item) => (
                             <a
                                 key={item}
@@ -74,8 +74,7 @@ const Footer = () => {
                 {/* Copyright */}
                 <div className="mt-8 pt-6 border-t border-zinc-800 text-center">
                     <p className="text-gray-400 text-sm">
-                        © {currentYear} Amar Tatrasi. Made with{" "}
-                        <span className="text-red-500">❤</span> using React & Tailwind CSS
+                        © {currentYear} Amar Tatrasi. All rights reserved.
                     </p>
                 </div>
             </div>
