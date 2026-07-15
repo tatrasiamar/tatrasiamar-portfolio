@@ -54,6 +54,39 @@ const Experience = () => {
                     ]
                 },
                 {
+                    name: "Terracos Backend Architecture (BMS & IoT)",
+                    description: "A robust Java Spring Boot backend built to manage IoT devices, save real-time sensor data, and run automated background tasks.",
+                    isRichContent: true,
+                    role: "Backend Developer",
+                    overview: "Developed the core backend system for the Building Management System. It handles standard API requests from the frontend while simultaneously listening to hardware devices for live data updates.",
+                    problem: [
+                        "Needed a way to safely save live data from physical sensors",
+                        "Basic timers were too rigid for user-defined email alerts",
+                        "Managing user logins and roles across different platforms was complex"
+                    ],
+                    modules: [
+                        { title: "IoT Data Processing", details: "Connected hardware devices to the database using MQTT to save live sensor readings" },
+                        { title: "Smart Scheduling", details: "Used Quartz Scheduler so users can create and edit their own automated email alerts without restarting the server" },
+                        { title: "User Management", details: "Integrated Supabase for secure logins while keeping user roles synced in our own database" }
+                    ],
+                    architecture: [
+                        "Spring Boot 3",
+                        "Quartz Scheduler",
+                        "MQTT Integration",
+                        "PostgreSQL",
+                        "Supabase Auth"
+                    ],
+                    tech: ["Java 17", "Spring Boot", "Quartz", "MQTT", "PostgreSQL", "Swagger/OpenAPI"],
+                    challenges: [
+                        { title: "Background Tasks", desc: "Replaced basic scheduled jobs with a dynamic system so email alerts could be customized by users on the fly." },
+                        { title: "Data Synchronization", desc: "Ensured that when a user registers via Supabase, their profile and company roles instantly sync to our PostgreSQL database." }
+                    ],
+                    impact: [
+                        { title: "Reliable Data", desc: "Successfully processed and saved thousands of real-time sensor readings into the database." },
+                        { title: "Custom Alerts", desc: "Gave users the power to set up their own automated email reports easily." }
+                    ]
+                },
+                {
                     name: "Enterprise Offline Desktop Client & Admin Dashboard",
                     description: "An offline-first desktop application and centralized command system built for a B2B ecosystem.",
                     isRichContent: true,

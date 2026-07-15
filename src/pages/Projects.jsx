@@ -168,7 +168,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="mt-12 text-center">
             <a
               href="#experience"
