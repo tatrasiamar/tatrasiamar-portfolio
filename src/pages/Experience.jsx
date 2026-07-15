@@ -8,7 +8,7 @@ const Experience = () => {
             title: "Software Engineer – SE-1",
             company: "Terracos Technologies Pvt Ltd",
             location: "Hyderabad",
-            period: "Oct 2025 – Present",
+            period: "Jul 2025 – Present",
             type: "Full-time",
             responsibilities: [
                 "Developing enterprise web applications for HRMS, Payroll, BMS, SCADA, and IoT platforms using React, TypeScript, Spring Boot, and PostgreSQL",
@@ -264,7 +264,7 @@ const Experience = () => {
             title: "Software Engineer Intern",
             company: "Terracos Technologies Pvt Ltd",
             location: "Hyderabad",
-            period: "Jul 2025 – Sep 2025",
+            period: "Apr 2025 – Jun 2025",
             type: "Internship",
             responsibilities: [
                 "Developed React + TypeScript dashboards for Building Management Systems (BMS)",
