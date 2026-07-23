@@ -2,13 +2,11 @@ import React from "react";
 
 const About = () => {
   const skills = {
-    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "Electron"],
-    backend: ["Java", "Spring Boot", "RESTful APIs", "MQTT", "Python (Basics)"],
-    databases: ["Supabase (PostgreSQL)", "MySQL", "SQLite"],
-    scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
-    tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel", "Netlify"],
-    cloudAI: ["GitHub Copilot", "Claude", "ChatGPT", "Cursor", "AI-assisted testing", "Prompt engineering"],
-    b2bSaaS: ["Multi-tenant Architecture", "Payroll & Logic Engines", "SaaS Product Design", "Enterprise Integrations", "Industrial Compliance"]
+    frontend: ["React", "TypeScript", "Tailwind CSS"],
+    backend: ["Java Spring Boot", "REST APIs", "MQTT", "Python"],
+    databases: ["PostgreSQL", "MySQL"],
+    scadaAutomation: ["SCADA UI/HMI", "PLC Automation", "IoT Integration"],
+    tools: ["Git", "Postman", "Selenium", "Docker"]
   };
 
   return (
@@ -18,27 +16,25 @@ const About = () => {
           About <span className="text-gradient">Me</span>
         </h2>
 
-        <div className="mb-12">
           <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            <span className="text-blue-400 font-medium">Software Engineer</span> at Terracos Technologies, specializing in the architecture of high-performance industrial and SaaS ecosystems. My background combines Computer Science expertise with practical implementation of <span className="text-cyan-400">SCADA UI/HMI</span> and <span className="text-cyan-400">PLC automation</span>.
+            <span className="text-blue-400 font-medium">Software Engineer</span> at Terracos Technologies, specializing in building responsive web applications and robust backend systems. My background combines strong Computer Science fundamentals with practical experience in <span className="text-cyan-400">React</span>, <span className="text-cyan-400">Java Spring Boot</span>, and <span className="text-cyan-400">IoT integration</span>.
           </p>
-          <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            I drive the <span className="text-purple-400 font-medium">full-lifecycle development</span> of technical products, bridging the gap between hardware (IoT/MQTT) and scalable software architectures. My focus is on delivering mission-critical monitoring systems with a commitment to Agile precision and robust engineering.
+          <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto mb-16">
+            I enjoy taking ownership of <span className="text-purple-400 font-medium">the entire development lifecycle</span>—from designing intuitive user interfaces to architecting scalable databases. My goal is to build secure, efficient, and user-friendly software that solves real-world problems.
           </p>
-        </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Core Competencies & Wins</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Career Highlights</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
-              "Developed enterprise HRMS and Payroll modules with a 3-layer logic engine",
-              "Integrated PLC and IoT devices with web applications using custom MQTT layers",
-              "Built SCADA dashboards for real-time monitoring of HVAC & Power",
-              "Agile & Scrum: Delivered full-lifecycle features from UI and database design to final production sprints",
-              "Optimized high-scale database queries for multi-tenant SaaS platforms",
-              "Optimized React performance with custom SEO pre-rendering",
-              "Developed clean room monitoring systems with immutable audit-ready logs",
-              "Synchronized industrial hardware state with web applications"
+              "Developed full-stack HRMS and Payroll applications using React and Spring Boot",
+              "Integrated IoT hardware with web dashboards using MQTT and REST APIs",
+              "Built interactive, real-time monitoring interfaces for industrial systems",
+              "Managed entire feature lifecycles from database design to UI implementation",
+              "Optimized PostgreSQL queries to improve application performance",
+              "Implemented custom SEO strategies and pre-rendering for React apps",
+              "Built secure backend systems with role-based access control and audit logs",
+              "Designed scalable, responsive user interfaces with Tailwind CSS"
             ].map((item, index) => (
               <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 <div className="flex items-start">
@@ -132,7 +128,7 @@ const About = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <h4 className="text-xl font-semibold text-cyan-400">Tools</h4>
+                <h4 className="text-xl font-semibold text-cyan-400">DevOps & Tools</h4>
               </div>
               <ul className="space-y-2">
                 {skills.tools.map((skill, index) => (
@@ -144,41 +140,7 @@ const About = () => {
               </ul>
             </div>
 
-            {/* Cloud & AI Card */}
-            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-pink-500/10 hover:to-rose-500/10 transition-all duration-300 border border-pink-500/20 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-500/20">
-              <div className="flex items-center mb-4">
-                <svg className="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                </svg>
-                <h4 className="text-xl font-semibold text-pink-400">AI-Augmented Dev</h4>
-              </div>
-              <ul className="space-y-2">
-                {skills.cloudAI.map((skill, index) => (
-                  <li key={index} className="text-gray-300 flex items-center">
-                    <span className="w-2 h-2 bg-pink-400 rounded-full mr-2"></span>
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
-            {/* B2B & SaaS Card */}
-            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-yellow-500/10 hover:to-orange-500/10 transition-all duration-300 border border-yellow-500/20 hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-500/20">
-              <div className="flex items-center mb-4">
-                <svg className="w-8 h-8 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-                <h4 className="text-xl font-semibold text-yellow-400">B2B & SaaS</h4>
-              </div>
-              <ul className="space-y-2">
-                {skills.b2bSaaS.map((skill, index) => (
-                  <li key={index} className="text-gray-300 flex items-center">
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       </div>

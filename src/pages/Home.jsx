@@ -48,7 +48,7 @@ const Home = () => {
               <span className="text-blue-400 font-semibold">Software Engineer</span> at Terracos Technologies, building enterprise SaaS applications including HRMS, Payroll, Building Management Systems, and Industrial IoT dashboards.
             </p>
             <p>
-              Specializing in <span className="text-purple-400 font-medium">mission-critical systems</span>—from high-precision SCADA monitoring and IoT integration to complex 3-layer payroll logic engines for enterprise clients.
+              Specializing in <span className="text-purple-400 font-medium">full-stack development</span>—building scalable web applications, integrating IoT devices, and designing complex backend systems for enterprise clients.
             </p>
           </div>
 
@@ -82,7 +82,7 @@ const Home = () => {
               download
               className="px-8 py-3 border-2 border-blue-400 rounded-lg font-bold text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-105"
             >
-              Download CV
+              Download Resume
             </a>
           </div>
 
