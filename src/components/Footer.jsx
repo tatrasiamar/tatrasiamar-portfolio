@@ -27,7 +27,7 @@ const Footer = () => {
                             </a>
                         ))}
                         <a
-                            href="/Tatras_Amar_Resume.pdf"
+                            href="/Tatrasi_Amar_Resume.pdf"
                             download
                             className="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-200"
                         >
