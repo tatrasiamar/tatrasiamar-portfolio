@@ -69,7 +69,7 @@ const Experience = () => {
                 </h2>
                 <div className="flex justify-center mb-12">
                     <a
-                        href="/Tatras_Amar_Resume.pdf"
+                        href="/Tatrasi_Amar_Resume.pdf"
                         download
                         className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-zinc-700 rounded-lg text-blue-400 font-bold transition-all hover:scale-105"
                     >
