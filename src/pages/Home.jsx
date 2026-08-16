@@ -78,7 +78,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
-              href="/Tatras_Amar_Resume.pdf"
+              href="/Tatrasi_Amar_Resume.pdf"
               download
               className="px-8 py-3 border-2 border-blue-400 rounded-lg font-bold text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-105"
             >
