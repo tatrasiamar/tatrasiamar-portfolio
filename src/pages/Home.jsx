@@ -22,7 +22,7 @@ const Home = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-xl opacity-40 animate-pulse"></div>
             <img
-              src="/profile.jpeg"
+              src="/profile_image1.png"
               alt="Tatrasi Amar"
               className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-transparent bg-gradient-to-r from-blue-500 to-purple-600 p-1 shadow-2xl transition-transform duration-500 hover:scale-105"
             />
