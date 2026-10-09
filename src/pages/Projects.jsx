@@ -38,19 +38,19 @@ const Projects = () => {
               </div>
               <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">IoT & Automation</span>
               <h3 className="text-2xl font-bold mb-3 text-white">HMS – Smart Home Management</h3>
-              <p className="text-gray-400 text-sm mb-6">IoT application for residential automation, managing devices and real-time syncing.</p>
+              <p className="text-gray-400 text-sm mb-6">Full-stack IoT application for residential automation, device management, and real-time syncing.</p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-2 text-sm text-gray-300">
                   <span className="text-purple-400 font-bold">✓</span>
-                  <span>Reduced data latency by 50% using MQTT</span>
+                  <span>Developed dynamic React UI for end-users to control devices</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-300">
                   <span className="text-purple-400 font-bold">✓</span>
-                  <span>Integrated over 10 types of IoT devices</span>
+                  <span>Engineered Spring Boot backend to reduce data latency by 50% using MQTT</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-2">
-                {["Zustand", "MQTT", "Supabase", "IoT SDKs"].map(t => (
+                {["React", "Spring Boot", "Zustand", "MQTT"].map(t => (
                   <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
                 ))}
               </div>
@@ -63,19 +63,19 @@ const Projects = () => {
               </div>
               <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Enterprise SaaS</span>
               <h3 className="text-2xl font-bold mb-3 text-white">Enterprise HRMS & Payroll</h3>
-              <p className="text-gray-400 text-sm mb-6">Backend logic engine for payroll processing and automated biometric attendance.</p>
+              <p className="text-gray-400 text-sm mb-6">End-to-end Full-Stack platform for payroll processing and automated biometric attendance.</p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-2 text-sm text-gray-300">
                   <span className="text-blue-400 font-bold">✓</span>
-                  <span>Ensured 100% accuracy in payroll calculations</span>
+                  <span>Built the entire React/TypeScript frontend for complex dashboard analytics</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-300">
                   <span className="text-blue-400 font-bold">✓</span>
-                  <span>Built reliable attendance tracking for over 1000 users</span>
+                  <span>Architected Spring Boot backend with Spring Data JPA for strict multi-tenant isolation</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-2">
-                {["React", "TypeScript", "3-Layer Logic", "MathJS"].map(t => (
+                {["React", "Spring Boot", "Quartz", "PostgreSQL"].map(t => (
                   <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
                 ))}
               </div>
@@ -88,19 +88,19 @@ const Projects = () => {
               </div>
               <span className="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">SCADA / HMI</span>
               <h3 className="text-2xl font-bold mb-3 text-white">BMS – Building Monitoring</h3>
-              <p className="text-gray-400 text-sm mb-6">Real-time dashboards for monitoring building utilities and hardware alarms.</p>
+              <p className="text-gray-400 text-sm mb-6">Full-stack IoT SCADA system for monitoring building utilities and hardware alarms.</p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-2 text-sm text-gray-300">
                   <span className="text-red-400 font-bold">✓</span>
-                  <span>Real-time data visualization for HVAC and power systems</span>
+                  <span>Developed real-time React & Recharts frontend dashboards for visualization</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-300">
                   <span className="text-red-400 font-bold">✓</span>
-                  <span>Instant notifications for critical hardware alarms</span>
+                  <span>Built asynchronous MQTT message processors in Spring Boot for live telemetry</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-2">
-                {["SCADA UI", "Modbus", "Spring Boot", "Recharts"].map(t => (
+                {["React", "Spring Boot", "MQTT", "Razorpay"].map(t => (
                   <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
                 ))}
               </div>
@@ -126,6 +126,31 @@ const Projects = () => {
               </div>
               <div className="flex flex-wrap gap-2">
                 {["Pre-rendering", "Meta Manager", "Vite", "Netlify"].map(t => (
+                  <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Terracos AI - Agentic AI B2B Marketing & Sales Platform */}
+            <div className="glass-effect rounded-3xl p-8 border border-orange-500/20 hover:border-orange-500/50 transition-all group relative overflow-hidden md:col-span-2">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <span className="text-6xl">🤖</span>
+              </div>
+              <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Agentic AI & Automation</span>
+              <h3 className="text-2xl font-bold mb-3 text-white">Terracos AI – B2B Marketing Platform</h3>
+              <p className="text-gray-400 text-sm mb-6">Autonomous marketing platform that researches prospects, scores leads, and drafts hyper-personalized outreach using AI.</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-orange-400 font-bold">✓</span>
+                  <span>Integrated Gemini LLM for dynamic lead research and custom email drafting</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-300">
+                  <span className="text-orange-400 font-bold">✓</span>
+                  <span>Built a persistent background queue system in PostgreSQL using Drizzle ORM</span>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Next.js App Router", "TypeScript", "PostgreSQL", "Gemini AI", "Resend API"].map(t => (
                   <span key={t} className="px-2 py-1 text-[10px] bg-white/5 border border-white/10 rounded text-gray-400">{t}</span>
                 ))}
               </div>
