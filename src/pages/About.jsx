@@ -2,11 +2,11 @@ import React from "react";
 
 const About = () => {
   const skills = {
-    frontend: ["React", "TypeScript", "Tailwind CSS"],
-    backend: ["Java Spring Boot", "REST APIs", "MQTT", "Python"],
-    databases: ["PostgreSQL", "MySQL"],
+    frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+    backend: ["Java Spring Boot", "Spring Data JPA", "REST APIs", "Quartz Scheduler", "MQTT"],
+    databases: ["PostgreSQL", "Supabase", "MySQL", "Drizzle ORM"],
     scadaAutomation: ["SCADA UI/HMI", "PLC Automation", "IoT Integration"],
-    tools: ["Git", "Postman", "Selenium", "Docker"]
+    tools: ["Git", "Docker", "Postman", "Selenium", "Razorpay API"]
   };
 
   return (
@@ -17,10 +17,10 @@ const About = () => {
         </h2>
 
           <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            <span className="text-blue-400 font-medium">Software Engineer</span> at Terracos Technologies, specializing in building responsive web applications and robust backend systems. My background combines strong Computer Science fundamentals with practical experience in <span className="text-cyan-400">React</span>, <span className="text-cyan-400">Java Spring Boot</span>, and <span className="text-cyan-400">IoT integration</span>.
+            <span className="text-blue-400 font-medium">Full-Stack Software Engineer</span> with 2 years of hands-on experience at Terracos Technologies, specializing in building high-throughput enterprise platforms, real-time IoT architectures, and robust backend systems. My expertise covers <span className="text-cyan-400">Java Spring Boot</span>, <span className="text-cyan-400">React & Next.js</span>, and <span className="text-cyan-400">distributed IoT telemetry</span>.
           </p>
           <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto mb-16">
-            I enjoy taking ownership of <span className="text-purple-400 font-medium">the entire development lifecycle</span>—from designing intuitive user interfaces to architecting scalable databases. My goal is to build secure, efficient, and user-friendly software that solves real-world problems.
+            I enjoy taking ownership of <span className="text-purple-400 font-medium">the entire development lifecycle</span>—from designing intuitive user interfaces to architecting scalable database schemas and automated background schedulers. My systems have saved ₹3–4 Lakhs in software licensing costs while supporting 1,000+ active enterprise users.
           </p>
 
         <div className="mb-12">

@@ -55,16 +55,16 @@ const Home = () => {
           {/* Recent Highlights / Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-blue-500/50 transition-colors group">
-              <p className="text-2xl font-bold text-blue-400 group-hover:scale-110 transition-transform">6+</p>
-              <p className="text-xs text-gray-400 uppercase tracking-widest">Enterprise Modules</p>
+              <p className="text-2xl font-bold text-blue-400 group-hover:scale-110 transition-transform">2 Years</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">Experience</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-purple-500/50 transition-colors group">
-              <p className="text-2xl font-bold text-purple-400 group-hover:scale-110 transition-transform">10+</p>
-              <p className="text-xs text-gray-400 uppercase tracking-widest">IoT Integrations</p>
+              <p className="text-2xl font-bold text-purple-400 group-hover:scale-110 transition-transform">1,000+</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">Active Users</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:border-pink-500/50 transition-colors group hidden md:block">
-              <p className="text-xl font-bold text-pink-400 group-hover:scale-110 transition-transform mt-1 mb-1">React</p>
-              <p className="text-xs text-gray-400 uppercase tracking-widest">Spring Boot</p>
+              <p className="text-xl font-bold text-pink-400 group-hover:scale-110 transition-transform mt-1 mb-1">React & Next.js</p>
+              <p className="text-xs text-gray-400 uppercase tracking-widest">Java · Spring Boot</p>
             </div>
           </div>
 
