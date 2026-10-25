@@ -8,31 +8,29 @@ const Experience = () => {
             title: "Software Engineer – SE-1",
             company: "Terracos Technologies Pvt Ltd",
             location: "Hyderabad",
-            period: "Jul 2025 – Present",
+            period: "Feb 2025 – Present",
             type: "Full-time",
             responsibilities: [
-                "Developing full-stack web applications for HRMS, Payroll, and IoT platforms using React, TypeScript, Spring Boot, and PostgreSQL",
-                "Designed and implemented responsive, user-friendly frontend interfaces using Tailwind CSS",
-                "Implemented custom SEO strategies and Static Site Generation (SSG), reducing page load times by 40%",
-                "Built real-time dashboards with Supabase for monitoring alarms and device data",
-                "Developed complex backend logic for payroll calculations and automated reporting",
-                "Integrated IoT hardware devices using MQTT and REST APIs for environmental monitoring",
-                "Developed and maintained automation and manual testing workflows to improve software quality",
-                "Collaborated in sprint planning, feature estimation, and Agile software delivery"
+                "Engineered full-stack multi-tenant enterprise platforms (HRMS, Payroll, Industrial IoT BMS) with React, TypeScript, Spring Boot, and PostgreSQL for 1,000+ active users",
+                "Architected an in-house payroll engine with dynamic salary structures and tax formulas (100% calculation accuracy), saving ₹3–4 Lakhs/year in SaaS licensing",
+                "Integrated Quartz Scheduler for persistent background jobs, daily attendance aggregation, and automated PDF payslip/email dispatches",
+                "Implemented asynchronous MQTT ingestion for telemetry from 10+ industrial sensors, cutting end-to-end data latency by 50%",
+                "Built secure Razorpay payment flows with webhook handling for automated billing, transaction verification, and invoice generation",
+                "Designed role-based (RBAC) UI dashboards using React, TypeScript, and Tailwind CSS; applied SSG optimizations, reducing page load times by 40%",
+                "Built Selenium automated testing workflows and collaborated in sprint planning and architecture reviews (Agile/Scrum)"
             ],
-
             color: "blue"
         },
         {
             title: "Software Engineer Intern",
             company: "Terracos Technologies Pvt Ltd",
             location: "Hyderabad",
-            period: "Apr 2025 – Jun 2025",
+            period: "Nov 2024 – Jan 2025",
             type: "Internship",
             responsibilities: [
-                "Developed React + TypeScript dashboards for Building Management Systems (BMS)",
-                "Built AMS UI and database using Supabase and SQL",
-                "Integrated IoT services using REST APIs"
+                "Developed responsive Building Management System (BMS) dashboards using React, TypeScript, and Recharts to visualize live HVAC and power metrics",
+                "Contributed to PostgreSQL and Supabase schema design for Attendance Management System (AMS), supporting real-time audit logs",
+                "Integrated REST APIs and WebSockets for low-latency device communication; resolved frontend state bottlenecks to boost rendering speed"
             ],
             color: "purple"
         }
@@ -45,8 +43,13 @@ const Experience = () => {
             icon: "🚀"
         },
         {
+            title: "Saved ₹3–4L/yr in SaaS Licensing",
+            description: "Engineered in-house HRMS and payroll engine with 100% computational accuracy, replacing vendor tools.",
+            icon: "💰"
+        },
+        {
             title: "Improved Website Performance",
-            description: "Used custom SEO strategies to make web pages load 40% faster.",
+            description: "Used custom SEO strategies and SSG pre-rendering to make web pages load 40% faster.",
             icon: "⚡"
         }
     ];
