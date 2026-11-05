@@ -45,7 +45,7 @@ const Home = () => {
 
           <div className="space-y-4 text-base md:text-lg text-gray-300 mb-8">
             <p>
-              <span className="text-blue-400 font-semibold">Software Engineer</span> at Terracos Technologies, building enterprise SaaS applications including HRMS, Payroll, Building Management Systems, and Industrial IoT dashboards.
+              <span className="text-blue-400 font-semibold">Software Engineer</span> with 2 years of experience at Terracos Technologies (Product Startup), building commercial B2B SaaS platforms (HRMS & Payroll) and industrial IoT systems for client organizations.
             </p>
             <p>
               Specializing in <span className="text-purple-400 font-medium">full-stack development</span>—building scalable web applications, integrating IoT devices, and designing complex backend systems for enterprise clients.

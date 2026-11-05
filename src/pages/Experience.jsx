@@ -11,8 +11,8 @@ const Experience = () => {
             period: "Feb 2025 – Present",
             type: "Full-time",
             responsibilities: [
-                "Engineered full-stack multi-tenant enterprise platforms (HRMS, Payroll, Industrial IoT BMS) with React, TypeScript, Spring Boot, and PostgreSQL for 1,000+ active users",
-                "Architected an in-house payroll engine with dynamic salary structures and tax formulas (100% calculation accuracy), saving ₹3–4 Lakhs/year in SaaS licensing",
+                "Engineered full-stack commercial B2B SaaS platforms (HRMS, Payroll, Industrial IoT BMS) with React, TypeScript, Spring Boot, and PostgreSQL for 1,000+ active users across client companies",
+                "Architected a commercial multi-tenant HRMS & payroll engine with dynamic salary structures and tax formulas (100% calculation accuracy), deployed for external client organizations",
                 "Integrated Quartz Scheduler for persistent background jobs, daily attendance aggregation, and automated PDF payslip/email dispatches",
                 "Implemented asynchronous MQTT ingestion for telemetry from 10+ industrial sensors, cutting end-to-end data latency by 50%",
                 "Built secure Razorpay payment flows with webhook handling for automated billing, transaction verification, and invoice generation",
@@ -44,7 +44,7 @@ const Experience = () => {
         },
         {
             title: "Saved ₹3–4L/yr in SaaS Licensing",
-            description: "Engineered in-house HRMS and payroll engine with 100% computational accuracy, replacing vendor tools.",
+            description: "Engineered commercial B2B SaaS HRMS and payroll engine with 100% computational accuracy, deployed for client organizations.",
             icon: "💰"
         },
         {
