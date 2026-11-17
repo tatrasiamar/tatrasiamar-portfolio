@@ -5,8 +5,9 @@ const About = () => {
     frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
     backend: ["Java Spring Boot", "Spring Security (JWT)", "Spring Data JPA", "REST APIs", "Quartz Scheduler", "MQTT"],
     databases: ["PostgreSQL", "Supabase", "MySQL", "Drizzle ORM"],
-    scadaAutomation: ["SCADA UI/HMI", "PLC Automation", "IoT Integration"],
-    tools: ["Git", "Docker", "Postman", "Selenium", "Razorpay API"]
+    scadaAutomation: ["SCADA UI/HMI", "PLC Automation", "IoT Hardware Sync (Biometric)"],
+    cloudAI: ["Google Cloud (GenAI Certified)", "Google Gemini LLM API", "Agentic AI Workflows", "Prompt Engineering"],
+    tools: ["Git & GitHub", "Docker", "Postman", "Selenium", "Razorpay API"]
   };
 
   return (
@@ -17,7 +18,7 @@ const About = () => {
         </h2>
 
           <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            <span className="text-blue-400 font-medium">Full-Stack Software Engineer</span> with 2 years of hands-on experience at an early-stage product startup (Terracos Technologies), specializing in building commercial <span className="text-cyan-400">multi-tenant B2B SaaS platforms</span> (HRMS & Payroll), real-time IoT architectures, and robust backend systems. My expertise covers <span className="text-cyan-400">Java Spring Boot</span>, <span className="text-cyan-400">React & Next.js</span>, and <span className="text-cyan-400">distributed IoT telemetry</span>.
+            <span className="text-blue-400 font-medium">Full-Stack Software Engineer</span> with 2 years of hands-on experience at an early-stage product startup (Terracos Technologies), specializing in building <span className="text-cyan-400 font-medium">commercial multi-tenant B2B SaaS platforms</span> (HRMS & Payroll), real-time IoT architectures, and robust backend systems. My expertise covers <span className="text-cyan-400">Java Spring Boot</span>, <span className="text-cyan-400">React & Next.js</span>, and <span className="text-cyan-400">distributed IoT telemetry</span>.
           </p>
           <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto mb-16">
             I take extreme ownership of <span className="text-purple-400 font-medium">the entire product lifecycle</span>—from designing intuitive user interfaces to architecting secure multi-tenant database schemas and automated background schedulers. My systems have saved ₹3–4 Lakhs in software licensing costs while supporting 1,000+ active enterprise users across client organizations.
@@ -28,13 +29,13 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
               "Architected commercial multi-tenant B2B SaaS HRMS & Payroll platforms deployed for client companies",
-              "Integrated IoT hardware with web dashboards using MQTT and REST APIs",
+              "Integrated biometric IoT hardware with cloud databases using MQTT and REST APIs",
               "Built interactive, real-time monitoring interfaces for industrial systems",
-              "Managed entire feature lifecycles from database design to UI implementation",
-              "Optimized PostgreSQL queries to improve application performance",
-              "Implemented custom SEO strategies and pre-rendering for React apps",
+              "Earned Google Cloud 'Introduction to Generative AI' certification and integrated Gemini LLM workflows",
+              "Managed entire feature lifecycles from database design to UI implementation and production release",
+              "Optimized PostgreSQL queries and transactional locking to eliminate race conditions in payroll processing",
               "Built secure backend systems with Spring Security (JWT), multi-tenant data isolation, and RBAC",
-              "Designed scalable, responsive user interfaces with Tailwind CSS"
+              "Designed scalable, responsive user interfaces with Next.js, React, TypeScript, and Tailwind CSS"
             ].map((item, index) => (
               <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 <div className="flex items-start">
@@ -97,6 +98,24 @@ const About = () => {
                 {skills.databases.map((skill, index) => (
                   <li key={index} className="text-gray-300 flex items-center">
                     <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Cloud & AI Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-amber-500/10 hover:to-yellow-500/10 transition-all duration-300 border border-amber-500/20 hover:border-amber-400/50 hover:shadow-lg hover:shadow-amber-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-amber-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+                <h4 className="text-xl font-semibold text-amber-400">Cloud & AI</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.cloudAI.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-amber-400 rounded-full mr-2"></span>
                     {skill}
                   </li>
                 ))}

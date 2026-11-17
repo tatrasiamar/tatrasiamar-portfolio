@@ -55,6 +55,7 @@ const Experience = () => {
     ];
 
     const certifications = [
+        "Introduction to Generative AI – Google Cloud",
         "Full Stack Development with Cloud Computing – EY-GDS (AICTE, Skill India)",
         "Data Structures & Algorithms in Java – Geeks For Geeks",
         "Java Fundamentals – Oracle Academy",
